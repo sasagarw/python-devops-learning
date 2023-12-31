@@ -9,3 +9,15 @@ In this example, we'll create a Lambda function that identifies EBS snapshots th
 ### Description:
 
 The Lambda function fetches all EBS snapshots owned by the same account ('self') and also retrieves a list of active EC2 instances (running and stopped). For each snapshot, it checks if the associated volume (if exists) is not associated with any active instance. If it finds a stale snapshot, it deletes it, effectively optimizing storage costs.
+
+## github-jira-integration.py
+
+This aims to automate the process of creation of Jira tickets directly from GitHub comments using python script.
+
+### Description:
+
+Currently, the manual and time-intensive process of generating Jira tickets necessitates developers to log in to the Jira dashboard, manually input all required details, and create a new ticket. To streamline this process, we aim to develop a Python application that establishes a seamless connection between GitHub and Jira.
+
+By implementing a Python app and configuring a webhook in a GitHub repository, we can automate the creation of Jira tickets. When a developer comments "/jira", the Python app is triggered, initiating the generation of a corresponding ticket in Jira.
+
+For this initiative, we will leverage the Flask framework to construct the Python app. Additionally, we will employ API calls to interact with the Jira API, enabling the automated creation of tickets based on information extracted from GitHub issue comments. The python app will run on AWS EC2 instance which the instance IP connected to internet gateway for public access so that github can call this application when triggered using "/jira".
