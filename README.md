@@ -1,5 +1,15 @@
 # python-devops-learning
 
+## terraform-learning
+
+- Configured Terraform for AWS, managing cloud resources with customized attributes.
+- Explored providers, resources, variables, and conditional expressions for nuanced infrastructure setups. Also, implemented S3 backend for remote state storage.
+- Created reusable infrastructure using Terraform modules.
+- Manage environments with Terraform workspaces.
+- Integrated Terraform with HashiCorp Vault for secure secret management.
+
+Find the implementation here: https://github.com/sasagarw/terraform-learning
+
 ## ebs-snapshots-stale.py
 
 Used in Identifying Stale EBS Snapshots
